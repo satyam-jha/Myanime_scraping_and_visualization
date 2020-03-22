@@ -42,11 +42,7 @@ def get_url(html_file):
         try:
             url = link.a['href']
             season = link.text.strip("\n").strip(" \n")
-            #season = url.split("/")[-1]
-        #print(link.a['href'])
-            #print("===================\n")
-            #print(url)
-            #print("===================\n")
+            
             get.append(url)
             writerlink.writerow([season ,url] )
         except:
